@@ -1,0 +1,36 @@
+body {
+  padding-bottom: 20px;
+  min-height : 700px
+}
+
+
+
+.jumbotron {
+background-color: #b3a3af;
+color :#f0f6f6;
+}
+.navbar {
+margin-bottom: 7px;
+background-color: #f8f8f8;
+color : 	#000000;
+font-style: italic;
+    font-family: monospace;
+}
+
+.navbar-light .navbar-brand {
+
+color : 	#b3a3af;
+}
+.navbar-light .navbar-nav .nav-link:hover  {
+
+color : 	#b3a3af;
+}
+.navbar-light .navbar-toggler {
+
+    border-color: #b3a3af;
+}
+
+/*.rounded {
+    border-radius: 25rem !important;
+}*/
+

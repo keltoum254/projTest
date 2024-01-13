@@ -1,0 +1,83 @@
+
+<div class="row">
+  <div class="col-xs-4 col-md-6">
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'contact' %}" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="dropdown09">-->
+<!--            <a class="dropdown-item" href="#">Action</a>-->
+<!--            <a class="dropdown-item" href="#">Another action</a>-->
+<!--            <a class="dropdown-item" href="#">Something else here</a>-->
+<!--          </div>-->
+<!--        </li>-->
+      </ul>
+<!--<form class="navbar-form navbar-right" method="post" action="">{%csrf_token%}-->
+<!--  <div class="form_group">-->
+<!--<input class="form-control" type="text" placeholder="username" name="username"/>-->
+<!--  </div>-->
+<!--  <div class="form_group">-->
+<!--<input class="form-control" type="password" placeholder="password" name="password"/>-->
+<!--  </div>-->
+<!--  <button class ="btn btn-primary" type="submit" >Login</button>-->
+<!--</form>-->
+
+
+<!--<form class="form-inline my-2 my-md-0">-->
+<!--<input class="form-control" type="text" placeholder="Search" aria-label="Search">-->
+<!--</form>-->
+    </div>
+  </nav>
+  </div>
+<div class="col-xs-4 col-md-3 offset-md-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample10">
+      <ul class="navbar-nav">
+        {% if request.user.is_authenticated %}
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'logout'%}">Logout<span class="sr-only">(current)</span></a>
+        </li>
+        {% else %}
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'auth_login'%}">Login<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'registration_register'%}">Register</a>
+        </li>
+        {% endif %}
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="dropdown10">-->
+<!--            <a class="dropdown-item" href="#">Action</a>-->
+<!--            <a class="dropdown-item" href="#">Another action</a>-->
+<!--            <a class="dropdown-item" href="#">Something else here</a>-->
+<!--          </div>-->
+<!--        </li>-->
+      </ul>
+    </div>
+  </nav>
+
+</div>
+</div>
