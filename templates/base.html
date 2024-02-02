@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!doctype html>
 
 <html lang="en">
@@ -85,6 +86,195 @@
 
 
     {% include  "javascript.html" %}
+    {% block pop-up %}
+    {% endblock  %}
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModalExample" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My diplomas</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Master</h5>
+        <p class="card-text">Master obtained in 2021 within ENSAM casa school</p>
+        <a href="#" class="btn btn-primary" id="masterDip">Master Big Data & IOT</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Bachlor</h5>
+        <p class="card-text">Bachlor obtained in 2019 within FST settat college.</p>
+        <a href="#" class="btn btn-primary" id="bachlorDip">Bachelor engineering computer </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Baccalaureate</h5>
+        <p class="card-text">Bac obtained in 2016 in Casablanca</p>
+        <a href="#" class="btn btn-primary" id="BacDip">Baccalaureate physical science </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">certification MS Office</h5>
+        <p class="card-text">certification obtained in 2023 in MS Office 2019.</p>
+        <a href="#" class="btn btn-primary" id="OfficeDip">certification MS Office 2019</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="ModalPdfMaster" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelMatser">Modal title</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+
+      <img src="{% static 'img/Master.jpg' %}" frameborder="0" class="img-fluid " style = "width:100%;height:100%">
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalPdfLicence" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelLicence">Modal title</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+
+      <img src="{% static 'img/licence.jpg' %}" frameborder="0" class="img-fluid " style = "width:100%;height:100%">
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+  <!-- Modal -->
+<div class="modal fade" id="ModalPdfBac" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelBac">Modal title</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+
+      <img src="{% static 'img/bac.jpg' %}" frameborder="0" class="img-fluid " style = "width:100%;height:100%">
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+  <!-- Modal -->
+<div class="modal fade" id="ModalPdfOffice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelOffice">Modal title</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+
+      <img src="{% static 'img/office.jpg' %}" frameborder="0" class="img-fluid " style = "width:100%;height:100%">
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+   <!-- Modal -->
+<div class="modal fade" id="ModalCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelCV">My cv</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body">
+
+      <img src="{% static 'img/cv.jpg' %}" frameborder="0" class="img-fluid " style = "width:100%;height:100%">
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
   </body>
 
 </html>

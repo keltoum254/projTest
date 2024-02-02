@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Navbar examples</h1>
+<p>This example is a quick exercise to illustrate how the navbar and its contents work.</p>
+<button type="button" onclick="myFunction()"> Cliquez-moi !</button>
+<p id="demo"></p>
+</body>
+</html>
+
+<script type="text/javascript" >
+    document.write('Avant le debut!')
+    function hello()
+    { alert('hello');}
+    hello()
+
+<!--    document.getElementById("demo").innerHTML = "Bonjour JavaScript"-->
+
+
+    function myFunction()
+    { document.getElementById("demo").innerHTML = "Bonjour JavaScript";
+      document.getElementById("demo").style.fontSize = "25px";
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";}
+
+
+      alert("nous allons utiliser les fonctions confirm et promt");
+      if (confirm("Voulez-vous essayer la fonction prompt ?"))
+      {var comment = prompt("Quelles sont vos impressions concernant l'utilisation de confirm");
+      document.write("Merci pour votre commentaires:<br>[")
+      document.write(comment)
+      document.write("]")
+      }
+      else
+      {document.write("Revenez utiliser prompt une autre fois.")}
+
+
+</script>

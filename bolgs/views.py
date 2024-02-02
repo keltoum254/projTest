@@ -14,6 +14,7 @@ def home(request):
     print("=========================================")
     form = SignUpForm(request.POST or None)
     title = "Sign Up now"
+    print(title)
     context = {
         "title": title,
         "form": form,
@@ -55,11 +56,13 @@ def home(request):
                 "queryset": queryset,
             }
 
+
+
     return render(request, "home.html", context)
 
 
 def contact(request):
-    title = 'Contact Us'
+    title = 'Contact me'
     text_center = True
     emailForm = ContactForm(request.POST or None)
     if emailForm.is_valid():

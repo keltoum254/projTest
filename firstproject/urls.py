@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from bolgs.views import home, contact
-from firstproject.views import about,logout_view
+from firstproject.views import about,logout_view, test_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', about, name='about'),
@@ -28,6 +28,7 @@ urlpatterns = [
     path('email/', contact, name='contact'),
     path('accounts/', include('registration.backends.default.urls')),
     path('logout/', logout_view, name='logout'),
+    path('test/', test_view, name='test'),
 
 ]
 
